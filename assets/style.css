@@ -3,6 +3,69 @@
     box-sizing: border-box;
 }
 
-#row_container {
-    padding: 4rem;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/wall.png);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+    #titolo {
+        font-size: 70px;
+        font-family: "Edu Tas Beginner", sans-serif;
+    }
+}
+
+
+
+main {
+    background-image: url(./img/cork.png);
+    box-shadow: black;
+
+
+    #row_container {
+        padding-left: 270px;
+        padding-top: 50px;
+        padding-right: 270px;
+
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+
+
+
+
+            img {
+                width: 260px;
+                height: 260px;
+
+
+            }
+
+
+
+
+            p {
+                display: flex;
+                font-family: "Sometype Mono", monospace;
+            }
+
+            h3 {
+                display: flex;
+                font-family: "Edu Tas Beginner", sans-serif;
+            }
+
+
+
+
+        }
+
+    }
 }

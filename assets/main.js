@@ -6,20 +6,14 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
             const dataEl = data[i];
             console.log(dataEl);
 
-            const changeImg = document.querySelectorAll("img")
-            changeImg[i].src = dataEl.url
+            const changeImg = document.querySelectorAll("img");
+            changeImg[i].src = dataEl.url;
 
-            const changeDate = document.querySelectorAll(".date")
-            changeDate[i].innerHTML = dataEl.date
+            const changeDate = document.querySelectorAll(".date");
+            changeDate[i].innerHTML = dataEl.date;
 
             const changeTitle = document.querySelectorAll(".title_card")
-            changeTitle[i].innerHTML = toUpperChase(dataEl.title)
-
-
-
-
-
-
+            changeTitle[i].innerHTML = dataEl.title.toUpperCase()
         }
     })
     .catch(error => {

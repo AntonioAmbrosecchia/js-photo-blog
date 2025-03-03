@@ -5,90 +5,99 @@
 
 
 #overlay {
+    position: relative;
     position: fixed;
-    background-color: rgba(0, 0, 3, 0.596);
+    background-color: rgba(0, 0, 3, 0.742);
     min-height: 100vh;
     width: 100%;
     z-index: +100;
 
-
-
-
-
-    header {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(./img/wall.png);
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        #titolo {
-            font-size: 70px;
-            font-family: "Edu Tas Beginner", sans-serif;
-        }
+    #close {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        border-radius: 50%;
+        font-size: 20px;
+        border-color: burlywood;
+        width: 50px;
+        height: 50px;
     }
-
-    main {
-        background-image: url(./img/cork.png);
+}
 
 
-        #row {
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/wall.png);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    #titolo {
+        font-size: 70px;
+        font-family: "Edu Tas Beginner", sans-serif;
+    }
+}
+
+main {
+    background-image: url(./img/cork.png);
+
+
+    #row {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 250px;
+        padding-right: 250px;
+
+        .col {
             display: flex;
-            flex-wrap: wrap;
-            padding-top: 30px;
-            padding-bottom: 50px;
-            padding-left: 250px;
-            padding-right: 250px;
+            width: calc(100% / 12 * 4);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
-            .col {
-                display: flex;
-                width: calc(100% / 12 * 4);
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 20px;
-                padding-bottom: 20px;
+            .cards {
+                position: relative;
+                box-shadow: 3px 3px 6px 2px rgba(0, 0, 3, 0.48);
 
-                .cards {
-                    position: relative;
-                    box-shadow: 3px 3px 6px 2px rgba(0, 0, 3, 0.48);
+                .card_top {
+                    background-color: white;
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
 
-                    .card_top {
-                        background-color: white;
-                        padding-top: 20px;
-                        padding-left: 20px;
-                        padding-right: 20px;
-
-                        svg {
-                            position: absolute;
-                            transform: translateX(-50%) translateY(-50%);
-                            left: 50%;
-                            top: 1%;
-                        }
-
-                        img {
-                            max-width: 100%;
-                        }
+                    svg {
+                        position: absolute;
+                        transform: translateX(-50%) translateY(-50%);
+                        left: 50%;
+                        top: 1%;
                     }
 
-                    .card_buttom {
-                        background-color: white;
-                        padding-left: 20px;
-                        padding-bottom: 20px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
 
-                        p {
-                            color: gray;
-                            font-size: 13px;
-                            font-family: "Sometype Mono", monospace;
-                            padding-top: 10px;
+                .card_buttom {
+                    background-color: white;
+                    padding-left: 20px;
+                    padding-bottom: 20px;
 
-                        }
+                    p {
+                        color: gray;
+                        font-size: 13px;
+                        font-family: "Sometype Mono", monospace;
+                        padding-top: 10px;
 
-                        h3 {
-                            font-size: 24px;
-                            font-family: "Edu Tas Beginner", sans-serif;
-                        }
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        font-family: "Edu Tas Beginner", sans-serif;
                     }
                 }
             }

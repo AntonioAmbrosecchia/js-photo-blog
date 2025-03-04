@@ -5,7 +5,9 @@
 
 
 #overlay {
-    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     background-color: rgba(0, 0, 3, 0.742);
     min-height: 100vh;
@@ -15,12 +17,24 @@
     #close {
         position: absolute;
         left: 50%;
-        top: 10%;
+        top: 5%;
         border-radius: 50%;
         font-size: 20px;
         border-color: burlywood;
         width: 50px;
         height: 50px;
+    }
+
+    #container_over_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+
+
+        #over_img {
+            max-width: 100%;
+        }
     }
 }
 
